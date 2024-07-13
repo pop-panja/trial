@@ -1,6 +1,9 @@
 import streamlit as st
+import pandas as pd
+import numpy
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title("🎈 My first app")
+
+st.header("Area Chart")
+chart_data = pd.DataFrame(np.random.randn(20,3O, columns=("a","b","c")))
+st.area_chart(chart_data)
